@@ -8,7 +8,8 @@ namespace DomainModels
    public class LottoDbContext : DbContext
     {
 
-        private readonly string _connectionString;
+        private readonly string _connectionString ;
+
         public LottoDbContext(string connectionString)
         {
             _connectionString = connectionString;
@@ -17,6 +18,10 @@ namespace DomainModels
         protected override void OnConfiguring(DbContextOptionsBuilder options)
         {
             options.UseSqlServer(_connectionString);
+        }
+        public LottoDbContext()
+        {
+
         }
 
 

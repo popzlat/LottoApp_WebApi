@@ -19,12 +19,20 @@ namespace Data
         }
         public void Add(RoundResults entity)
         {
-            throw new NotImplementedException();
+            using (var dbContext = new LottoDbContext(_connectionString))
+            {
+                dbContext.RoundResults.Add(entity);
+                dbContext.SaveChanges();
+            }
         }
 
         public void Delete(RoundResults entity)
         {
-            throw new NotImplementedException();
+            using (var dbContext = new LottoDbContext(_connectionString))
+            {
+                dbContext.RoundResults.Add(entity);
+                dbContext.SaveChanges();
+            }
         }
 
         public IEnumerable<RoundResults> GetAll()
@@ -37,12 +45,19 @@ namespace Data
 
         public RoundResults GetById(int id)
         {
-            throw new NotImplementedException();
+            using (var dbContext = new LottoDbContext(_connectionString))
+            {
+                return dbContext.RoundResults.FirstOrDefault(x => x.RoundId == id);
+            }
         }
 
         public void Update(RoundResults entity)
         {
-            throw new NotImplementedException();
+            using (var dbContext = new LottoDbContext(_connectionString))
+            {
+                dbContext.RoundResults.Update(entity);
+                dbContext.SaveChanges();
+            }
         }
     }
 }
