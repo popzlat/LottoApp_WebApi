@@ -79,7 +79,7 @@ namespace LottoApp
 
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new Info { Title = "Lotto App", Version = "v1" });
+                c.SwaggerDoc("v2", new Info { Title = "Lotto", Version = "v2" });
             });
 
 

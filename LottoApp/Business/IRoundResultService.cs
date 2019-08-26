@@ -1,4 +1,5 @@
-﻿using Models;
+﻿using DomainModels;
+using Models;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -8,7 +9,7 @@ namespace Business
     public interface IRoundResultService
     {
 
-        IEnumerable<RoundResultModel> GetAll();
+        IEnumerable<RoundResults> GetAll();
         void StartNewDraw();
     }
 }

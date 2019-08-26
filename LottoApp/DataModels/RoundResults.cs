@@ -15,6 +15,5 @@ namespace DomainModels
         [StringLength(50)]
         public string Combination { get; set; }
 
-
     }
 }

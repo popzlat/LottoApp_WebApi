@@ -21,12 +21,8 @@ namespace DomainModels
         }
         public LottoDbContext()
         {
-
         }
-
-
-
-
+        
         public DbSet<User> Users { get; set; }
         public DbSet<Ticket> Tickets { get; set; }
         public DbSet<RoundResults> RoundResults { get; set; }

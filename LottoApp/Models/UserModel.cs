@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Models
+﻿namespace Models
 {
     public class UserModel
     {
@@ -10,5 +8,7 @@ namespace Models
         public string LastName { get; set; }
         public int Balance { get; set; }
         public byte Role { get; set; }
+        public string Token { get; set; }
+
     }
 }

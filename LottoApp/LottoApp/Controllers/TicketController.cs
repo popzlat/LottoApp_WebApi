@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using Business;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Models;
 
@@ -16,10 +12,12 @@ namespace LottoApp.Controllers
 
 
         private readonly ITicketService _ticketService;
+        private readonly IUserService _userService;
 
-        public TicketController(ITicketService ticketService)
+        public TicketController(ITicketService ticketService , IUserService userService)
         {
             _ticketService = ticketService;
+            _userService = userService;
         }
         // GET: api/Ticket
         [Route("byUser/{id}")]

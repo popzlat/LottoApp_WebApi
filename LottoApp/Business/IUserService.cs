@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 using Models;
 
 namespace Business
@@ -10,5 +8,7 @@ namespace Business
 
         void Register(UserModel model);
         IEnumerable<UserModel> GetAll();
+        //UserModel Authenticate(LoginModel model);
+
     }
 }

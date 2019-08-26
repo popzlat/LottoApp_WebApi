@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using Business;
 using Microsoft.AspNetCore.Mvc;
 using Models;
@@ -33,5 +30,12 @@ namespace LottoApp.Controllers
         {
             return _userService.GetAll();
         }
+
+        //[Route("authenticate")]
+        //[HttpPost]
+        //public IActionResult Authenticate([FromBody] LoginModel model)
+        //{
+        //    return Ok(_userService.Authenticate(model));
+        //}
     }
 }
