@@ -5777,23 +5777,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Zlatko\\.nuget\\packages\\": {},
+    "C:\\Users\\zlatko.poposki\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Zlatko\\Desktop\\WebApi\\LottoApp_WebApi\\LottoApp\\Data\\Data.csproj",
+      "projectUniqueName": "C:\\Users\\zlatko.poposki\\Desktop\\webapi\\LottoApp_WebApi\\LottoApp\\Data\\Data.csproj",
       "projectName": "Data",
-      "projectPath": "C:\\Users\\Zlatko\\Desktop\\WebApi\\LottoApp_WebApi\\LottoApp\\Data\\Data.csproj",
-      "packagesPath": "C:\\Users\\Zlatko\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Zlatko\\Desktop\\WebApi\\LottoApp_WebApi\\LottoApp\\Data\\obj\\",
+      "projectPath": "C:\\Users\\zlatko.poposki\\Desktop\\webapi\\LottoApp_WebApi\\LottoApp\\Data\\Data.csproj",
+      "packagesPath": "C:\\Users\\zlatko.poposki\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\zlatko.poposki\\Desktop\\webapi\\LottoApp_WebApi\\LottoApp\\Data\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Zlatko\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\zlatko.poposki\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5806,8 +5806,8 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "C:\\Users\\Zlatko\\Desktop\\WebApi\\LottoApp_WebApi\\LottoApp\\DataModels\\DomainModels.csproj": {
-              "projectPath": "C:\\Users\\Zlatko\\Desktop\\WebApi\\LottoApp_WebApi\\LottoApp\\DataModels\\DomainModels.csproj"
+            "C:\\Users\\zlatko.poposki\\Desktop\\webapi\\LottoApp_WebApi\\LottoApp\\DataModels\\DomainModels.csproj": {
+              "projectPath": "C:\\Users\\zlatko.poposki\\Desktop\\webapi\\LottoApp_WebApi\\LottoApp\\DataModels\\DomainModels.csproj"
             }
           }
         }

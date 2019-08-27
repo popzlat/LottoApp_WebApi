@@ -12637,23 +12637,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Zlatko\\.nuget\\packages\\": {},
+    "C:\\Users\\zlatko.poposki\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Zlatko\\Desktop\\WebApi\\LottoApp_WebApi\\LottoApp\\LottoApp\\LottoApp.csproj",
+      "projectUniqueName": "C:\\Users\\zlatko.poposki\\Desktop\\webapi\\LottoApp_WebApi\\LottoApp\\LottoApp\\LottoApp.csproj",
       "projectName": "LottoApp",
-      "projectPath": "C:\\Users\\Zlatko\\Desktop\\WebApi\\LottoApp_WebApi\\LottoApp\\LottoApp\\LottoApp.csproj",
-      "packagesPath": "C:\\Users\\Zlatko\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Zlatko\\Desktop\\WebApi\\LottoApp_WebApi\\LottoApp\\LottoApp\\obj\\",
+      "projectPath": "C:\\Users\\zlatko.poposki\\Desktop\\webapi\\LottoApp_WebApi\\LottoApp\\LottoApp\\LottoApp.csproj",
+      "packagesPath": "C:\\Users\\zlatko.poposki\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\zlatko.poposki\\Desktop\\webapi\\LottoApp_WebApi\\LottoApp\\LottoApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Zlatko\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\zlatko.poposki\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -12666,17 +12666,17 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "C:\\Users\\Zlatko\\Desktop\\WebApi\\LottoApp_WebApi\\LottoApp\\Business\\Business.csproj": {
-              "projectPath": "C:\\Users\\Zlatko\\Desktop\\WebApi\\LottoApp_WebApi\\LottoApp\\Business\\Business.csproj"
+            "C:\\Users\\zlatko.poposki\\Desktop\\webapi\\LottoApp_WebApi\\LottoApp\\Business\\Business.csproj": {
+              "projectPath": "C:\\Users\\zlatko.poposki\\Desktop\\webapi\\LottoApp_WebApi\\LottoApp\\Business\\Business.csproj"
             },
-            "C:\\Users\\Zlatko\\Desktop\\WebApi\\LottoApp_WebApi\\LottoApp\\DataModels\\DomainModels.csproj": {
-              "projectPath": "C:\\Users\\Zlatko\\Desktop\\WebApi\\LottoApp_WebApi\\LottoApp\\DataModels\\DomainModels.csproj"
+            "C:\\Users\\zlatko.poposki\\Desktop\\webapi\\LottoApp_WebApi\\LottoApp\\DataModels\\DomainModels.csproj": {
+              "projectPath": "C:\\Users\\zlatko.poposki\\Desktop\\webapi\\LottoApp_WebApi\\LottoApp\\DataModels\\DomainModels.csproj"
             },
-            "C:\\Users\\Zlatko\\Desktop\\WebApi\\LottoApp_WebApi\\LottoApp\\Data\\Data.csproj": {
-              "projectPath": "C:\\Users\\Zlatko\\Desktop\\WebApi\\LottoApp_WebApi\\LottoApp\\Data\\Data.csproj"
+            "C:\\Users\\zlatko.poposki\\Desktop\\webapi\\LottoApp_WebApi\\LottoApp\\Data\\Data.csproj": {
+              "projectPath": "C:\\Users\\zlatko.poposki\\Desktop\\webapi\\LottoApp_WebApi\\LottoApp\\Data\\Data.csproj"
             },
-            "C:\\Users\\Zlatko\\Desktop\\WebApi\\LottoApp_WebApi\\LottoApp\\Models\\Models.csproj": {
-              "projectPath": "C:\\Users\\Zlatko\\Desktop\\WebApi\\LottoApp_WebApi\\LottoApp\\Models\\Models.csproj"
+            "C:\\Users\\zlatko.poposki\\Desktop\\webapi\\LottoApp_WebApi\\LottoApp\\Models\\Models.csproj": {
+              "projectPath": "C:\\Users\\zlatko.poposki\\Desktop\\webapi\\LottoApp_WebApi\\LottoApp\\Models\\Models.csproj"
             }
           }
         }

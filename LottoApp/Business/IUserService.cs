@@ -8,7 +8,7 @@ namespace Business
 
         void Register(UserModel model);
         IEnumerable<UserModel> GetAll();
-        //UserModel Authenticate(LoginModel model);
+        UserModel Authenticate(LoginModel model);
 
     }
 }

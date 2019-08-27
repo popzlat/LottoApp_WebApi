@@ -12,33 +12,44 @@ namespace Business
 
         private readonly IRepository<Ticket> _ticketRepository;
         private readonly IRepository<RoundResults> _roundResultRepository;
+        private readonly IRepository<User> _userRepository;
 
 
-        public TicketService(IRepository<Ticket> ticketRepository, IRepository<RoundResults> roundResultRepository)
+        public TicketService(IRepository<Ticket> ticketRepository, IRepository<RoundResults> roundResultRepository, IRepository<User> userRepository)
         {
             _ticketRepository = ticketRepository;
             _roundResultRepository = roundResultRepository;
+            _userRepository = userRepository;
 
         }
-
-
 
         public void CreateTicket(int userId, TicketsModel model)
         {
             var allRounds = _roundResultRepository.GetAll();
             var lastRound = !allRounds.Any() ? 0 : allRounds.Max(x => x.RoundId);
+
+            var currentUser = _userRepository.GetAll().FirstOrDefault(x => x.Id == userId);
+
             var ticket = new Ticket
             {
                 Combination = model.Combination,
-                UserId = model.UserId,
+                UserId = currentUser.Id,
                 Status = 1,
                 AwardBalance = 0,
                 Round = lastRound+1
-
+               
             };
 
-            _ticketRepository.Add(ticket);
+            if (currentUser.Ballance >= 50)
+            {
+                currentUser.Ballance = currentUser.Ballance - 50;
+            }
+            else
+            {
+                throw new Exception("You dont have money for ticket , wait until you get salary");
+            }
 
+            _ticketRepository.Add(ticket);
 
         }
 

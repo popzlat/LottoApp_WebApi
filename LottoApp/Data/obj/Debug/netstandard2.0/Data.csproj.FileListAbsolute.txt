@@ -34,3 +34,15 @@ C:\Users\Zlatko\Desktop\WebApi\LottoApp_WebApi\LottoApp\Data\obj\Debug\netstanda
 C:\Users\Zlatko\Desktop\WebApi\LottoApp_WebApi\LottoApp\Data\obj\Debug\netstandard2.0\Data.csproj.CopyComplete
 C:\Users\Zlatko\Desktop\WebApi\LottoApp_WebApi\LottoApp\Data\obj\Debug\netstandard2.0\Data.dll
 C:\Users\Zlatko\Desktop\WebApi\LottoApp_WebApi\LottoApp\Data\obj\Debug\netstandard2.0\Data.pdb
+C:\Users\zlatko.poposki\Desktop\webapi\LottoApp_WebApi\LottoApp\Data\bin\Debug\netstandard2.0\Data.deps.json
+C:\Users\zlatko.poposki\Desktop\webapi\LottoApp_WebApi\LottoApp\Data\bin\Debug\netstandard2.0\Data.dll
+C:\Users\zlatko.poposki\Desktop\webapi\LottoApp_WebApi\LottoApp\Data\bin\Debug\netstandard2.0\Data.pdb
+C:\Users\zlatko.poposki\Desktop\webapi\LottoApp_WebApi\LottoApp\Data\bin\Debug\netstandard2.0\DomainModels.dll
+C:\Users\zlatko.poposki\Desktop\webapi\LottoApp_WebApi\LottoApp\Data\bin\Debug\netstandard2.0\DomainModels.pdb
+C:\Users\zlatko.poposki\Desktop\webapi\LottoApp_WebApi\LottoApp\Data\obj\Debug\netstandard2.0\Data.csprojAssemblyReference.cache
+C:\Users\zlatko.poposki\Desktop\webapi\LottoApp_WebApi\LottoApp\Data\obj\Debug\netstandard2.0\Data.csproj.CoreCompileInputs.cache
+C:\Users\zlatko.poposki\Desktop\webapi\LottoApp_WebApi\LottoApp\Data\obj\Debug\netstandard2.0\Data.AssemblyInfoInputs.cache
+C:\Users\zlatko.poposki\Desktop\webapi\LottoApp_WebApi\LottoApp\Data\obj\Debug\netstandard2.0\Data.AssemblyInfo.cs
+C:\Users\zlatko.poposki\Desktop\webapi\LottoApp_WebApi\LottoApp\Data\obj\Debug\netstandard2.0\Data.csproj.CopyComplete
+C:\Users\zlatko.poposki\Desktop\webapi\LottoApp_WebApi\LottoApp\Data\obj\Debug\netstandard2.0\Data.dll
+C:\Users\zlatko.poposki\Desktop\webapi\LottoApp_WebApi\LottoApp\Data\obj\Debug\netstandard2.0\Data.pdb

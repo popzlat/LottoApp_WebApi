@@ -31,11 +31,11 @@ namespace LottoApp.Controllers
             return _userService.GetAll();
         }
 
-        //[Route("authenticate")]
-        //[HttpPost]
-        //public IActionResult Authenticate([FromBody] LoginModel model)
-        //{
-        //    return Ok(_userService.Authenticate(model));
-        //}
+        [Route("authenticate")]
+        [HttpPost]
+        public IActionResult Authenticate([FromBody] LoginModel model)
+        {
+            return Ok(_userService.Authenticate(model));
+        }
     }
 }
