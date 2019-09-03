@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Security.Claims;
 using Business;
+using Business.Exceptions;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Models;
@@ -62,7 +63,7 @@ namespace LottoApp.Controllers
         private int GetUserId()
         {
             if (!int.TryParse(User.FindFirst(ClaimTypes.NameIdentifier).Value, out var userId))
-                throw new Exception("Invalid user Id");
+                throw new LotoExceptions("Invalid user Id");
 
             return userId;
         }

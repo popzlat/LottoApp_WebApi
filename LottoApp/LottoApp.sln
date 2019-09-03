@@ -3,15 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.705
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LottoApp", "LottoApp\LottoApp.csproj", "{284356EE-BA4B-4B44-A05F-AF8FAF728468}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LottoApp", "LottoApp\LottoApp.csproj", "{284356EE-BA4B-4B44-A05F-AF8FAF728468}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DomainModels", "DataModels\DomainModels.csproj", "{B1EE8B87-8554-46E7-B583-D5311D15B0BE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DomainModels", "DataModels\DomainModels.csproj", "{B1EE8B87-8554-46E7-B583-D5311D15B0BE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data", "Data\Data.csproj", "{46347950-C8E0-4CBE-A8AC-7F36FF4C0832}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Data", "Data\Data.csproj", "{46347950-C8E0-4CBE-A8AC-7F36FF4C0832}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Business", "Business\Business.csproj", "{C8A4F857-1E44-4C0F-8C46-99C07292B650}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Business", "Business\Business.csproj", "{C8A4F857-1E44-4C0F-8C46-99C07292B650}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models", "Models\Models.csproj", "{4F1A0539-3C6B-4362-8D5E-79D9DFD8E8DB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Models", "Models\Models.csproj", "{4F1A0539-3C6B-4362-8D5E-79D9DFD8E8DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LottoApp-Tests", "LottoApp-Tests\LottoApp-Tests.csproj", "{CF7B5343-774E-4B18-8D4F-0457A7CA0114}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{4F1A0539-3C6B-4362-8D5E-79D9DFD8E8DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4F1A0539-3C6B-4362-8D5E-79D9DFD8E8DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4F1A0539-3C6B-4362-8D5E-79D9DFD8E8DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF7B5343-774E-4B18-8D4F-0457A7CA0114}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF7B5343-774E-4B18-8D4F-0457A7CA0114}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF7B5343-774E-4B18-8D4F-0457A7CA0114}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF7B5343-774E-4B18-8D4F-0457A7CA0114}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

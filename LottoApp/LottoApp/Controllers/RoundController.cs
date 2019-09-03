@@ -16,18 +16,19 @@ namespace LottoApp.Controllers
     public class RoundController : ControllerBase
     {
         private readonly IRoundResultService _roundResultService;
+        private readonly ITicketService _ticketService;
+        private readonly IUserService _userService;
 
         public RoundController(ITicketService ticketService, IUserService userService, IRoundResultService roundResultService)
         {
             _roundResultService = roundResultService;
+            _userService = userService;
+            _ticketService = ticketService;
+
         }
 
-        public RoundController(IRoundResultService roundResultService)
-        {
-            _roundResultService = roundResultService;
-        }
 
-        [Authorize(Roles = "Administrator")]
+      
         [Route("drawround")]
         [HttpPost]
         public IActionResult DrawRound()
@@ -36,7 +37,7 @@ namespace LottoApp.Controllers
             return Ok($"A new round has started!");
         }
 
-        [Authorize]
+       
         [Route("getresult")]
         [HttpGet]
         public IEnumerable<RoundResults> GetResults()

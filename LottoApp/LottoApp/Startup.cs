@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Business;
 using Data;
 using DomainModels;
+using LottoApp.Middleware;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -101,10 +102,17 @@ namespace LottoApp
             {
                 app.UseDeveloperExceptionPage();
             }
+            app.UseHttpsRedirection();
+
+            app.UseCors(x => x
+                .AllowAnyOrigin()
+                .AllowAnyMethod()
+                .AllowAnyHeader());
 
             app.UseAuthentication();
             app.UseSwagger();
             app.UseSwaggerUI(c => { c.SwaggerEndpoint("/swagger/v1/swagger.json", "Lotto App"); });
+            app.UseMiddleware(typeof(ExceptionHandlingMiddleware));
             app.UseMvc();
 
            

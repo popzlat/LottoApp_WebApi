@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using Business;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 using Models;
 
 namespace LottoApp.Controllers
@@ -10,10 +11,12 @@ namespace LottoApp.Controllers
     public class UserController : ControllerBase
     {
         private readonly IUserService _userService;
+        private readonly ILogger<UserController> _logger;
 
-        public UserController(IUserService userService)
+        public UserController(IUserService userService, ILogger<UserController> logger)
         {
             _userService = userService;
+            _logger = logger;
         }
 
         // POST api/values
@@ -35,6 +38,8 @@ namespace LottoApp.Controllers
         [HttpPost]
         public IActionResult Authenticate([FromBody] LoginModel model)
         {
+            
+            _logger.LogInformation($"The user: {model.Username} logged in.");
             return Ok(_userService.Authenticate(model));
         }
     }

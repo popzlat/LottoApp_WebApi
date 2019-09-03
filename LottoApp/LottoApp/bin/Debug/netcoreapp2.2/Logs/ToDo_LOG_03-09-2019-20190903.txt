@@ -1,0 +1,56 @@
+
+20:11:28 [Information] () User profile is available. Using '"C:\Users\zlatko.poposki\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+
+20:11:28 [Information] () Request starting HTTP/1.1 GET http://localhost:50399/swagger/index.html  
+
+20:11:28 [Warning] () Failed to determine the https port for redirect.
+
+20:11:29 [Information] () Request finished in 237.3511ms 200 text/html
+
+20:11:29 [Information] () Request starting HTTP/1.1 GET http://localhost:50399/swagger/v1/swagger.json  
+
+20:11:29 [Information] () Request finished in 191.1711ms 200 application/json;charset=utf-8
+
+20:11:43 [Information] () Request starting HTTP/1.1 POST http://localhost:50399/api/User/authenticate application/json-patch+json 60
+
+20:11:43 [Information] () CORS policy execution successful.
+
+20:11:43 [Information] () Executing endpoint '"LottoApp.Controllers.UserController.Authenticate (LottoApp)"'
+
+20:11:43 [Information] () Route matched with "{action = \"Authenticate\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Authenticate(Models.LoginModel)" on controller "LottoApp.Controllers.UserController" ("LottoApp").
+
+20:11:44 [Information] () Executing action method "LottoApp.Controllers.UserController.Authenticate (LottoApp)" - Validation state: Valid
+
+20:11:44 [Information] () The user: ivan@gmail.com logged in.
+
+20:11:45 [Information] () Executed action method "LottoApp.Controllers.UserController.Authenticate (LottoApp)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 1972.5759ms.
+
+20:11:45 [Information] () Executing ObjectResult, writing value of type '"Models.UserModel"'.
+
+20:11:46 [Information] () Executed action "LottoApp.Controllers.UserController.Authenticate (LottoApp)" in 2038.429ms
+
+20:11:46 [Information] () Executed endpoint '"LottoApp.Controllers.UserController.Authenticate (LottoApp)"'
+
+20:11:46 [Information] () Request finished in 2131.5303ms 200 application/json; charset=utf-8
+
+20:12:04 [Information] () Request starting HTTP/1.1 POST http://localhost:50399/api/Round/drawround  0
+
+20:12:04 [Information] () CORS policy execution successful.
+
+20:12:04 [Information] () Successfully validated the token.
+
+20:12:04 [Information] () Executing endpoint '"LottoApp.Controllers.RoundController.DrawRound (LottoApp)"'
+
+20:12:04 [Information] () Route matched with "{action = \"DrawRound\", controller = \"Round\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult DrawRound()" on controller "LottoApp.Controllers.RoundController" ("LottoApp").
+
+20:12:04 [Information] () Executing action method "LottoApp.Controllers.RoundController.DrawRound (LottoApp)" - Validation state: Valid
+
+20:12:04 [Information] () Executed action method "LottoApp.Controllers.RoundController.DrawRound (LottoApp)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 65.5628ms.
+
+20:12:04 [Information] () Executing ObjectResult, writing value of type '"System.String"'.
+
+20:12:04 [Information] () Executed action "LottoApp.Controllers.RoundController.DrawRound (LottoApp)" in 72.0901ms
+
+20:12:04 [Information] () Executed endpoint '"LottoApp.Controllers.RoundController.DrawRound (LottoApp)"'
+
+20:12:04 [Information] () Request finished in 139.6328ms 200 application/json; charset=utf-8

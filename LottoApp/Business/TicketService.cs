@@ -5,6 +5,8 @@ using Data;
 using DomainModels;
 using Models;
 using System.Linq;
+using Business.Exceptions;
+
 namespace Business
 {
     public class TicketService : ITicketService
@@ -46,10 +48,11 @@ namespace Business
             }
             else
             {
-                throw new Exception("You dont have money for ticket , wait until you get salary");
+                throw new LotoExceptions("You dont have money for ticket , wait until you get salary");
             }
 
             _ticketRepository.Add(ticket);
+            _userRepository.Update(currentUser);
 
         }
 

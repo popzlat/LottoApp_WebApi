@@ -1,4 +1,5 @@
-﻿using Data;
+﻿using Business.Exceptions;
+using Data;
 using DomainModels;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
@@ -44,27 +45,27 @@ namespace Business
         public void Register(UserModel model)
         {
             if (string.IsNullOrEmpty(model.Username))
-                throw new Exception("Username is required.");
+                throw new LotoExceptions("Username is required.");
 
             if (string.IsNullOrEmpty(model.FirstName))
-                throw new Exception("FirstName is required.");
+                throw new LotoExceptions("FirstName is required.");
 
             if (string.IsNullOrEmpty(model.LastName))
-                throw new Exception("LastName is required.");
+                throw new LotoExceptions("LastName is required.");
 
             if (string.IsNullOrEmpty(model.Password))
-                throw new Exception("Password is required.");
+                throw new LotoExceptions("Password is required.");
 
             if (_userRepository
                 .GetAll()
                 .Any(x => x.Username == model.Username))
-                throw new Exception("The username is already in use.");
+                throw new LotoExceptions("The username is already in use.");
 
             if (!ValidatePassword(model.Password))
-                throw new Exception("Please enter strong password.");
+                throw new LotoExceptions("Please enter strong password.");
 
             if (model.Password != model.ConfirmPassword)
-                throw new Exception("Password and Confirm Password are different.");
+                throw new LotoExceptions("Password and Confirm Password are different.");
 
             var md5 = new MD5CryptoServiceProvider();
             var passwordBytes = Encoding.ASCII.GetBytes(model.Password);
@@ -101,7 +102,6 @@ namespace Business
             //Create token
             var keyBytes = Encoding.ASCII.GetBytes(_jwtSettings.Secret);
             var jwtTokenHandler = new JwtSecurityTokenHandler();
-
 
             var descriptor = new SecurityTokenDescriptor()
             {

@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using Business.Exceptions;
 using Data;
 using DomainModels;
 using Models;
@@ -33,13 +34,13 @@ namespace Business
             var admin = _userRepository.GetAll().FirstOrDefault(x => x.Role ==0);
             if (admin.Role != 0)
             {
-                throw new Exception("You are not administrator");
+                throw new LotoExceptions("You are not administrator");
             }
             
             
             RoundResults newRound = new RoundResults();
 
-            ArrayList numbers = new ArrayList();
+            List<int> numbers = new List<int>();
 
             Random RandomClass = new Random();
 
@@ -55,24 +56,29 @@ namespace Business
 
                 numbers.Add(randomNumber);
             }
-            numbers.Sort();
 
-            var allRounds = _roundResultsRepository.GetAll();
-            var lastRound = !allRounds.Any() ? 0 : allRounds.Max(x => x.RoundId);
-            var tickets = _ticketRepository.GetAll().Where(x => x.Round == lastRound).ToList();
+            int roundId = 1;
+
+            if (_roundResultsRepository.GetAll().Count() != 0)
+                roundId = _roundResultsRepository.GetAll().Max(x => x.RoundId) + 1;
+
+            //var allRounds = _roundResultsRepository.GetAll();
+            //var lastRound = !allRounds.Any() ? 0 : allRounds.Max(x => x.RoundId);
+            var tickets = _ticketRepository.GetAll().Where(x => x.Round == roundId).ToList();
+           
 
             var numbersString = string.Join(",", numbers);
 
              newRound.Combination = numbersString;
             var winCommbinationSplited = numbersString.Split(',');
-            var winCombInt = winCommbinationSplited.Select(x => int.Parse(x)).ToList();
+            var winCombInt = winCommbinationSplited.Select(x => Int32.Parse(x)).ToList();
 
             
 
             foreach (var tiket in tickets)
             {
                 int count = 0;
-                var tiketNumbers =  tiket.Combination.Split(',').Select(x => int.Parse(x)).ToList();
+                var tiketNumbers =  tiket.Combination.Split(',').Select(x => Int32.Parse(x)).ToList();
 
                 foreach (var number in tiketNumbers)
                 {
@@ -105,13 +111,11 @@ namespace Business
                             tiket.Status = 3;
                             break;
                     }
-                    currentUser.Ballance = currentUser.Ballance + tiket.AwardBalance;
-                    _ticketRepository.Update(tiket);
-                    _userRepository.Update(currentUser);
-                    _roundResultsRepository.Add(newRound);
-
                 }
-
+                currentUser.Ballance = currentUser.Ballance + tiket.AwardBalance;
+                _ticketRepository.Update(tiket);
+                _userRepository.Update(currentUser);
+                _roundResultsRepository.Add(newRound);
             }
 
 
