@@ -15,7 +15,7 @@ namespace LottoApp_Tests.FakeRepositories
             _tickets = new List<Ticket>()
             {
                 new Ticket() {Id = 1,Combination="1,2,3,4,5,6,7",Round =2 , UserId =1 },
-                new Ticket() {Id =2 ,Combination="1,2,3,4,5,6,7",Round =2 , UserId =2 },
+                new Ticket() {Id =2 ,Combination="11,12,13,14,15,16,17",Round =2 , UserId =2 },
 
             };
         }
@@ -31,7 +31,7 @@ namespace LottoApp_Tests.FakeRepositories
 
         public IEnumerable<Ticket> GetAll()
         {
-            throw new NotImplementedException();
+            return _tickets;
         }
 
         public Ticket GetById(int id)

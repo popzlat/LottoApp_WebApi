@@ -1,4 +1,5 @@
 ﻿using Business;
+using Business.Exceptions;
 using Data;
 using DomainModels;
 using LottoApp_Tests.FakeRepositories;
@@ -27,9 +28,45 @@ namespace LottoApp_Tests
 
 
         [Fact]
-        public void Test()
+        public void Authenticate_UsernameExists_ExceptionThrow()
         {
-            //ToDoo tests 
+            //Arrange
+
+            var newUser = new UserModel
+            {
+                FirstName = "Test", LastName = "Test", Password = "Test", Username = "Test"
+            };
+
+            //Act
+            Action action = () => _userService.Register(newUser);
+
+            //Assert
+            var exception = Assert.Throws<LotoExceptions>(action);
+            Assert.Equal("The username is already in use.", exception.Message);
+
+
+        }
+
+        [Fact]
+        public void Authenticate_WeakPassword_ExceptionThrow()
+        {
+            //Arrange
+            var newUser = new UserModel
+            {
+                FirstName = "New",
+                LastName = "User",
+                Username = "new_user",
+                Password = "Test",
+                ConfirmPassword = "Test"
+                
+            };
+
+            //Act
+            Action action = () => _userService.Register(newUser);
+
+            //Assert
+            var exception = Assert.Throws<LotoExceptions>(action);
+            Assert.Equal(exception.Message, "Please enter strong password.");
         }
     }
 }

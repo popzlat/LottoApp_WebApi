@@ -37,7 +37,6 @@ namespace Business
                 throw new LotoExceptions("You are not administrator");
             }
             
-            
             RoundResults newRound = new RoundResults();
 
             List<int> numbers = new List<int>();

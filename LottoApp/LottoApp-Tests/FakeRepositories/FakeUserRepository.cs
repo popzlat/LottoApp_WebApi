@@ -34,7 +34,7 @@ namespace LottoApp_Tests.FakeRepositories
 
         public IEnumerable<User> GetAll()
         {
-            throw new NotImplementedException();
+            return _users;
         }
 
         public User GetById(int id)
